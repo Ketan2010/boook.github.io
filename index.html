@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>BoooK</title>
+		<style>
+			*
+			{
+				 
+			}
+			
+			body
+			{
+				font-family:arial;
+				background-color:white;
+				padding:10px;
+			}
+			.header 
+			{
+				padding: 30px;
+				text-align: center;
+				background-image:url("https://cdn.pixabay.com/photo/2019/06/28/12/02/open-book-4304049_960_720.jpg");
+				background-repeat:no-repeat;
+				  background-size: 100% 100%;
+				 -webkit-animation-name: example;
+				-webkit-animation-duration: 30s;
+				-webkit-animation-iteration-count: 3;
+				animation-name: example;
+				animation-duration: 15s
+				animation-iteration-count: 5
+				position:obsolute;
+				text-shadow:2px 2px 1px #b8b894;
+			}
+			/* Safari 4.0 - 8.0 */
+			@-webkit-keyframes example {
+				0%   {background-image:url("https://cdn.pixabay.com/photo/2019/06/28/12/02/open-book-4304049_960_720.jpg");}
+				25%  {background-image:url("https://cdn.pixabay.com/photo/2017/09/06/11/41/vintage-2721100_960_720.jpg");}
+				50%  {background-image:url("https://cdn.pixabay.com/photo/2013/07/18/14/56/open-163976_960_720.jpg");}
+				100% {background-image:url("https://cdn.pixabay.com/photo/2017/01/12/05/56/books-1973826_960_720.jpg");}	
+				}
+			}
+
+			/* Standard syntax */
+			@keyframes example {
+					0%   {background-image:url("https://cdn.pixabay.com/photo/2019/06/28/12/02/open-book-4304049_960_720.jpg");}
+				25%  {background-image:url("https://cdn.pixabay.com/photo/2017/09/06/11/41/vintage-2721100_960_720.jpg");}
+				50%  {background-image:url("https://cdn.pixabay.com/photo/2013/07/18/14/56/open-163976_960_720.jpg");}
+				100% {background-image:url("https://cdn.pixabay.com/photo/2017/01/12/05/56/books-1973826_960_720.jpg");}	
+				}
+				
+			.header h1
+			{
+				font-size: 50px;
+			}
+			.topnav
+			{
+				overflow: hidden;
+				background-color:#003300;
+				position:sticky;
+			}
+			.topnav a {
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.topnav a:hover
+			{
+				background-color:#00cc00;
+				color: black;
+				cursor: pointer;
+			}
+			/*frame*/
+			.framelayout
+			{
+				float: left;
+				width: 98%;
+				right:0;
+				background-color: #ccffb3;
+				padding-left: 20px;
+			}
+			.fakeimg
+			{
+				background-color: #d9ffb3;
+				width: 100%;
+				padding: 0px;
+			}
+			/* Add a card effect for articles */
+			.card
+			{
+				background-color: white;
+				padding: 20px;
+				margin-top: 20px;
+			}	
+
+			/* Clear floats after the columns */
+			.row:after
+			{
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/* Footer */
+			.footer
+			{
+				padding: 20px;
+				text-align: center;
+				background: #003300;
+				margin-top: 20px;
+				color:white;
+				height:100;
+			}
+			@media screen and (max-width: 800px)
+			{
+				.leftcolumn, .rightcolumn 
+				{   
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media screen and (max-width: 400px)
+			{
+				.topnav a 
+				{
+					float: none;
+					width: 100%;
+				}
+			}
+			#f
+			{
+				font-family: "Times New Roman", Times, serif;
+				font-size:150%;
+			}
+			button
+			{
+				width:80;
+				height:40;
+				background-color:#009900;
+				color:white;
+			}
+			button:hover
+			{
+				background-color:#003300;
+			}
+			.active
+			{
+				background-color:#336600;
+			}
+			p
+			{
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+			}
+			
+	
+			
+			
+			
+		</style>
+	</head>
+	<body>
+	
+			<div class="header">
+				<h1>BoOoK</h1>
+				<p id="f">Need FRIEND? Search Here!</p>
+			</div>
+			<div class="topnav">
+				<a  class="active" href="file:///C:/Users/KETAN/Desktop/Boook/defaultframe.html" target="frame">HOME</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/Topframe.html" target="frame">TOP 10</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/horrorframe.html" target="frame">Horror</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/humorframe.html" target="frame">Humor</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/comicframe.html" target="frame">Comic</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/quoteframe.html" target="frame">Quotes</a>
+				<a href="file:///C:/Users/KETAN/Desktop/Boook/aboutframe.html" target="frame" style="float:right">About</a>
+			</div>
+			
+			<div class="row">
+				<iframe  class="framelayout" src= "file:///C:/Users/KETAN/Desktop/Boook/defaultframe.html" height="250%" width="100%" name="frame" border="null">f</iframe>	
+			</div>
+			
+			
+	</frame>
+	</body>
+</html>
